@@ -2,4 +2,4 @@ all:
 	gcc -o mandelbrot main.c -lm
 
 clean:
-	rm -f mandelbrot
+	rm -f mandelbrot *.pgm

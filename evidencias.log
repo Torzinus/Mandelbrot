@@ -1,0 +1,159 @@
+Script iniciado em 2026-08-28 16:43:05-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="117" LINES="21"]
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004lsex. 28 ago 2026 16:43:11 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ whoami
+[?2004ltorzin
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ pwd
+[?2004l/home/torzin/Downloads/hcs4/Mandelbrot
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./[K[Kgcc m[Kmain.c -o mandelbrot
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelnrot[K[K[K[Kbrot 800 600 1000 4
+[?2004lImagem 600x800
+Interações máximas: 1000
+N threads: 4
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git add .
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git status
+[?2004lNo ramo main
+Your branch is up to date with 'origin/main'.
+
+Mudanças a serem submetidas:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Makefile[m
+	[32mnew file:   evidencias.log[m
+	[32mnew file:   main.c[m
+	[32mnew file:   mandelbrot[m
+
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004lsex. 28 ago 2026 17:07:15 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git commit -m "feat: execução simples"
+[?2004l[main 6b98cab] feat: execução simples
+ 4 files changed, 19 insertions(+)
+ create mode 100644 Makefile
+ create mode 100644 evidencias.log
+ create mode 100644 main.c
+ create mode 100755 mandelbrot
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git push
+[?2004lEnumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.Script iniciado em 2026-08-29 12:30:44-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="152" LINES="11"]
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004lsáb. 29 ago 2026 12:30:48 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ whoami
+[?2004ltorzin
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ pwd
+[?2004l/home/torzin/Downloads/hcs4/Mandelbrot
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ sci[K[K[Kscrit [K[K[K[K[K[Kexit
+[?2004lexit
+
+Script concluído em 2026-08-29 13:42:38-03:00 [COMMAND_EXIT_CODE="0"]
+Script iniciado em 2026-08-30 15:36:54-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="152" LINES="24"]
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004ldom. 30 ago 2026 15:36:59 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ whoami
+[?2004ltorzin
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ pwd
+[?2004l/home/torzin/Downloads/hcs4/Mandelbrot
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:52:21:[m[K [01;31m[Kerror: [m[Kinitialization of ‘[01m[K[01;32m[Kint **[m[K[m[K’ from incompatible pointer type ‘[01m[K[01;34m[Kint *[m[K[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   52 |     int ** imagem = [01;31m[K([m[Kint *)malloc(altura * largura * sizeof(int));
+      |                     [01;31m[K^[m[K
+[01m[Kmain.c:63:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[KSerial[m[K’; did you mean ‘[01m[Kserial[m[K’? [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   63 |     [01;31m[KSerial[m[K(imagem, largura, altura, max_iteracoes);
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kserial[m[K
+make: *** [Makefile:2: all] Error 1
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ mandelt[Kbot[K[Krot 800 600 1220[K[K00 3[K4
+[?2004lmandelbrot: comando não encontrado
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot 800 600 1200 4
+[?2004lFalha de segmentação     (imagem do núcleo gravada) ./mandelbrot 800 600 1200 4
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004ldom. 30 ago 2026 15:39:55 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot 8[K700 [K[K[K[K800 600 1200 4
+[?2004lFalha de segmentação     (imagem do núcleo gravada) ./mandelbrot 800 600 1200 4
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot 800 600 1200 4
+[?2004lImagem 800x600
+Interações máximas: 1200
+N threads: 4
+
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ 
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ma[K[Kdate
+[?2004ldom. 30 ago 2026 15:54:37 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git add Makefile
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ stat[K[K[K[Kgit statys
+[?2004lgit: 'statys' não é um comando git. Veja 'git --help'.
+
+The most similar command is
+	status
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git status
+[?2004lNo ramo main
+Your branch is up to date with 'origin/main'.
+
+Mudanças a serem submetidas:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   Makefile[m
+
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+	[31mmodified:   main.c[m
+	[31mmodified:   mandelbrot[m
+
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git commit -m "add[K[K[Kadd makefile vá[K[Kbásico"
+[?2004l[main 65d914f] add makefile básico
+ 1 file changed, 5 insertions(+)
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git push
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/Torzinus/Mandelbrot.git
+   6b98cab..65d914f  main -> main
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ maje[K[Kke
+[?2004lgcc -o mandelbrot main.c -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KsalvarArquivo[m[K’:
+[01m[Kmain.c:49:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kaltura[m[K’ undeclared (first use in this function)
+   49 |     for (int y = 0; y < [01;31m[Kaltura[m[K; y ++){
+      |                         [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:49:25:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:50:28:[m[K [01;31m[Kerror: [m[K‘[01m[Klargura[m[K’ undeclared (first use in this function)
+   50 |         for(int x = 0; x < [01;31m[Klargura[m[K; x++){
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[Kmain.c:51:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kimagem[m[K’ undeclared (first use in this function)
+   51 |             int intensidade = 255 * [01;31m[Kimagem[m[K[y][x] / max_iteracoes;
+      |                                     [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:51:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_iteracoes[m[K’ undeclared (first use in this function)
+   51 |             int intensidade = 255 * imagem[y][x] / [01;31m[Kmax_iteracoes[m[K;
+      |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+make: *** [Makefile:2: all] Error 1
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004ldom. 30 ago 2026 16:08:42 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot 800 700[K[K[K600 120 4[K[K[K00 4
+[?2004lImagem 800x600
+Interações máximas: 1200
+N threads: 4
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ m[K./mandelr[Kbrot 800 600 1200 4
+[?2004l
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ 
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004ldom. 30 ago 2026 16:16:08 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./an[K[Kmandelnro[K[K[Kbrot 200 75 100 4
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot 4 4 50 1
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004ldom. 30 ago 2026 16:21:08 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git add .[K[K[K[K[K[K[K[K[Kclean[K[K[K[K[Kmake clean
+[?2004lrm -f mandelbrot *.pgm
+[?2004h]0;torzin@Ubuntu:
