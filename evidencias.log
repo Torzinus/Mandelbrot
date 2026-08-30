@@ -156,4 +156,38 @@ N threads: 4
 [?2004ldom. 30 ago 2026 16:21:08 -03
 [?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git add .[K[K[K[K[K[K[K[K[Kclean[K[K[K[K[Kmake clean
 [?2004lrm -f mandelbrot *.pgm
-[?2004h]0;torzin@Ubuntu:
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git add .
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git commit -m "feat: serial"
+[?2004l[main 2ac275a] feat: serial
+ 4 files changed, 233 insertions(+), 5 deletions(-)
+ delete mode 100755 mandelbrot
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git push
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 6 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 3.75 KiB | 3.75 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/Torzinus/Mandelbrot.git
+   65d914f..2ac275a  main -> main
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm -fopenmp
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm -fopenmp
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:90:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kalgura[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kaltura[m[K’?
+   90 |     openmp(imagem, largura, [01;31m[Kalgura[m[K, max_iteracoes, num_threads);
+      |                             [01;31m[K^~~~~~[m[K
+      |                             [32m[Kaltura[m[K
+[01m[Kmain.c:90:29:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:2: all] Error 1
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm -fopenmp
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./proc[K[K[K[Kmandelbrot [7m4 4 50 1[27m4 4 50 1
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm -fopenmp
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot [7m6 6 30 3[27m6 6 30 3
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004ldom. 30 ago 2026 17:07:48 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@
