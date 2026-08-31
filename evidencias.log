@@ -227,3 +227,37 @@ To https://github.com/Torzinus/Mandelbrot.git
 [?2004lexit
 
 Script concluído em 2026-08-30 17:13:34-03:00 [COMMAND_EXIT_CODE="0"]
+Script iniciado em 2026-08-31 16:44:10-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="152" LINES="14"]
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004lseg. 31 ago 2026 16:44:13 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ whoami
+[?2004ltorzin
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ pwd
+[?2004l/home/torzin/Downloads/hcs4/Mandelbrot
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ [K]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ make
+[?2004lgcc -o mandelbrot main.c -lm -fopenmp
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot [7m10 6 40 4[27m10 6 40 4
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ date
+[?2004lseg. 31 ago 2026 17:53:48 -03
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrit[K[Kot 18 [K[K7 [K[K7 6 40 4
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ ./mandelbrot 100 10 500 3
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git comm[K[K[K[K[K[K[K[Kgit[K[K[Kmake clrean[K[K[K[Kean
+[?2004lrm -f mandelbrot *.pgm
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git add .
+[?2004l[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git commit -m "g[Kfeat: pthreads [K1"
+[?2004l[main d79bd6a] feat: pthreads1
+ 1 file changed, 60 insertions(+)
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ git push
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 821 bytes | 821.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Torzinus/Mandelbrot.git
+   32b42a3..d79bd6a  main -> main
+[?2004h]0;torzin@Ubuntu: ~/Downloads/hcs4/Mandelbrot[01;32mtorzin@Ubuntu[00m:[01;34m~/Downloads/hcs4/Mandelbrot[00m$ exit
+[?2004lexit
+
+Script concluído em 2026-08-31 18:01:09-03:00 [COMMAND_EXIT_CODE="0"]
