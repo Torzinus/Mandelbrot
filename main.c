@@ -52,25 +52,34 @@ void openmp(int ** imagem, int largura, int altura, int max_iteracoes, int num_t
     }
 }
 
-void salvarArquivo(int ** imagem, int largura, int altura, int max_iteracoes){
-    FILE * arquivo1 = fopen("mandelbrot_hcs4_serial.pgm", "w");
-    FILE * arquivo2 = fopen("mandelbrot_hcs4_openmp.pgm", "w");
-    if (arquivo1 == NULL){
-        return;
-    } if (arquivo2 == NULL){
+void salvarArquivoSerial(int ** imagem, int largura, int altura, int max_iteracoes){
+    FILE * arquivo = fopen("mandelbrot_hcs4_serial.pgm", "w");
+    if (arquivo == NULL){
         return;
     }
     for (int y = 0; y < altura; y ++){
         for(int x = 0; x < largura; x++){
             int intensidade = 255 * imagem[y][x] / max_iteracoes;   //calcula a intensidade do pixel de acordo com o número de iterações
-            fprintf(arquivo1, "%d ", intensidade);
-            fprintf(arquivo2, "%d ", intensidade);
+            fprintf(arquivo, "%d ", intensidade);
         }
-        fprintf(arquivo1, "\n");
-        fprintf(arquivo2, "\n");
+        fprintf(arquivo, "\n");
     }
-    fclose(arquivo1);
-    fclose(arquivo2);
+    fclose(arquivo);
+}
+
+void salvarArquivoOpenmp(int ** imagem, int largura, int altura, int max_iteracoes){
+    FILE * arquivo = fopen("mandelbrot_hcs4_openmp.pgm", "w");
+    if (arquivo == NULL){
+        return;
+    }
+    for(int y = 0; y < altura; y ++){
+        for(int x = 0; x < largura; x++){
+            int intensidade = 255 * imagem[y][x] / max_iteracoes;
+            fprintf(arquivo, "%d ", intensidade);
+        }
+        fprintf(arquivo, "\n");
+    }
+    fclose(arquivo);
 }
 
 int main(int argc, char *argv[]){
@@ -93,8 +102,10 @@ int main(int argc, char *argv[]){
     }
 
     serial(imagem, largura, altura, max_iteracoes);
+    salvarArquivoSerial(imagem, largura, altura, max_iteracoes);
+    
     openmp(imagem, largura, altura, max_iteracoes, num_threads);
-    salvarArquivo(imagem, largura, altura, max_iteracoes);
+    salvarArquivoOpenmp(imagem, largura, altura, max_iteracoes);
 
     //liberando a memória da matriz:
     for(int y = 0; y < altura; y ++){
