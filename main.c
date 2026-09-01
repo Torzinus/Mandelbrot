@@ -22,6 +22,9 @@ typedef struct argThread{
     int max_iteracoes;
     int linha_inicio;
     int linha_fim;
+    int estrategia; //1 ou 2
+    int tid;
+    int num_threads;
 } argThread;
 
 int calcularIteracoes(complex double z, complex double c, int max_iteracoes, int n){    //fórmula z_novo = z_atual² + c
@@ -43,13 +46,23 @@ Pixel calcularPixel(double x, double y, int largura, int altura, int max_iteraco
     return p;
 }
 
-void * calcularLinhas(void * arg){  //cada thread individual vai rodar essa função pra calcular as linhas
+void * calcularLinhas(void * arg){
     argThread * args = (argThread *)arg;
-    
-    for(int y = args->linha_inicio; y < args->linha_fim; y ++){
-        for(int x = 0; x < args->largura; x ++){
-            Pixel result = calcularPixel(x, y, args->largura, args->altura, args->max_iteracoes);
-            args->imagem[y][x] = result.iteracoes;
+
+    if(args->estrategia == 1){  //para pthreads1
+        for(int y = args->linha_inicio; y < args->linha_fim; y ++){
+            for(int x = 0; x < args->largura; x ++){
+                Pixel result = calcularPixel(x, y, args->largura, args->altura, args->max_iteracoes);       
+                args->imagem[y][x] = result.iteracoes;
+            }
+        }
+    } 
+    if(args->estrategia == 2){  //para pthreads2
+        for(int y = args->tid; y < args->altura; y += args->num_threads){
+            for(int x = 0; x < args->largura; x ++){
+                Pixel result = calcularPixel(x, y, args->largura, args->altura, args->max_iteracoes);  
+                args->imagem[y][x] = result.iteracoes;    
+            }
         }
     }
     return NULL;
@@ -87,10 +100,30 @@ void pthread1(int ** imagem, int largura, int altura, int max_iteracoes, int num
         arg[i].max_iteracoes = max_iteracoes;
         arg[i].linha_inicio = i * div_threads;
         arg[i].linha_fim = (i + 1) * div_threads;
+        arg[i].estrategia = 1;
         pthread_create(&threads[i], NULL, calcularLinhas, &arg[i]);
     }
     for (int i = 0; i < num_threads; i ++){
         pthread_join(threads[i], NULL);
+    }
+}
+
+void pthread2(int ** imagem, int largura, int altura, int max_iteracoes, int num_threads){
+    argThread arg[num_threads];
+    pthread_t threads[num_threads];
+
+    for(int i = 0; i < num_threads; i ++){
+        arg[i].imagem = imagem;
+        arg[i].largura = largura;
+        arg[i].altura = altura;
+        arg[i].max_iteracoes = max_iteracoes;
+        arg[i].tid = i;
+        arg[i].num_threads = num_threads;
+        arg[i].estrategia = 2;
+        pthread_create(&threads[i], NULL, calcularLinhas, &arg[i]);
+    }
+    for(int i = 0; i < num_threads; i ++){
+        pthread_join(threads[i],NULL);
     }
 }
 
@@ -139,6 +172,21 @@ void salvarArquivoPthread1(int ** imagem, int largura, int altura, int max_itera
     fclose(arquivo);
 }
 
+void salvarArquivoPthread2(int ** imagem, int largura, int altura, int max_iteracoes){
+    FILE * arquivo = fopen("mandelbrot_hcs4_pthreads2.pgm", "w");
+    if (arquivo == NULL){
+        return;
+    }
+    for(int y = 0; y < altura; y ++){
+        for(int x = 0; x < largura; x++){
+            int intensidade = 255 * imagem[y][x] / max_iteracoes;
+            fprintf(arquivo, "%d ", intensidade);
+        }
+        fprintf(arquivo, "\n");
+    }
+    fclose(arquivo);
+}
+
 int main(int argc, char *argv[]){
     int largura = atoi(argv[1]);
     int altura = atoi(argv[2]);
@@ -166,6 +214,9 @@ int main(int argc, char *argv[]){
 
     pthread1(imagem, largura, altura, max_iteracoes, num_threads);
     salvarArquivoPthread1(imagem, largura, altura, max_iteracoes);
+
+    pthread2(imagem, largura, altura, max_iteracoes, num_threads);
+    salvarArquivoPthread2(imagem, largura, altura, max_iteracoes);
 
     //liberando a memória da matriz:
     for(int y = 0; y < altura; y ++){
