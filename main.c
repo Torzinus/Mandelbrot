@@ -3,6 +3,7 @@
 #include <complex.h>
 #include <omp.h>
 #include <pthread.h>
+#include <ctype.h>
 
 #define X_MIN -2.0
 #define X_MAX 1.0
@@ -101,7 +102,12 @@ void pthread1(int ** imagem, int largura, int altura, int max_iteracoes, int num
         arg[i].linha_inicio = i * div_threads;
         arg[i].linha_fim = (i + 1) * div_threads;
         arg[i].estrategia = 1;
-        pthread_create(&threads[i], NULL, calcularLinhas, &arg[i]);
+        
+        int nova_thread = pthread_create(&threads[i], NULL, calcularLinhas, &arg[i]);
+        if(nova_thread != 0){
+            fprintf(stderr, "Falha ao criar thread.\n");
+            return;
+        }
     }
     for (int i = 0; i < num_threads; i ++){
         pthread_join(threads[i], NULL);
@@ -120,7 +126,11 @@ void pthread2(int ** imagem, int largura, int altura, int max_iteracoes, int num
         arg[i].tid = i;
         arg[i].num_threads = num_threads;
         arg[i].estrategia = 2;
-        pthread_create(&threads[i], NULL, calcularLinhas, &arg[i]);
+        int nova_thread = pthread_create(&threads[i], NULL, calcularLinhas, &arg[i]);
+        if(nova_thread != 0){
+            fprintf(stderr, "Falha ao criar thread.\n");
+            return;
+        }
     }
     for(int i = 0; i < num_threads; i ++){
         pthread_join(threads[i],NULL);
@@ -130,6 +140,7 @@ void pthread2(int ** imagem, int largura, int altura, int max_iteracoes, int num
 void salvarArquivoSerial(int ** imagem, int largura, int altura, int max_iteracoes){
     FILE * arquivo = fopen("mandelbrot_hcs4_serial.pgm", "w");
     if (arquivo == NULL){
+        fprintf(stderr, "Falha ao abrir o arquivo serial.\n");
         return;
     }
     for (int y = 0; y < altura; y ++){
@@ -145,6 +156,7 @@ void salvarArquivoSerial(int ** imagem, int largura, int altura, int max_iteraco
 void salvarArquivoOpenmp(int ** imagem, int largura, int altura, int max_iteracoes){
     FILE * arquivo = fopen("mandelbrot_hcs4_openmp.pgm", "w");
     if (arquivo == NULL){
+        fprintf(stderr, "Falha ao abrir o arquivo openmp.\n");
         return;
     }
     for(int y = 0; y < altura; y ++){
@@ -160,6 +172,7 @@ void salvarArquivoOpenmp(int ** imagem, int largura, int altura, int max_iteraco
 void salvarArquivoPthread1(int ** imagem, int largura, int altura, int max_iteracoes){
     FILE * arquivo = fopen("mandelbrot_hcs4_pthreads1.pgm", "w");
     if (arquivo == NULL){
+        fprintf(stderr, "Falha ao abrir o arquivo pthreads1.\n");
         return;
     }
     for(int y = 0; y < altura; y ++){
@@ -175,6 +188,7 @@ void salvarArquivoPthread1(int ** imagem, int largura, int altura, int max_itera
 void salvarArquivoPthread2(int ** imagem, int largura, int altura, int max_iteracoes){
     FILE * arquivo = fopen("mandelbrot_hcs4_pthreads2.pgm", "w");
     if (arquivo == NULL){
+        fprintf(stderr, "Falha ao abrir o arquivo pthreads2.\n");
         return;
     }
     for(int y = 0; y < altura; y ++){
@@ -188,20 +202,67 @@ void salvarArquivoPthread2(int ** imagem, int largura, int altura, int max_itera
 }
 
 int main(int argc, char *argv[]){
+
+    if(argc != 5){
+        fprintf(stderr, "O programa precisa de obrigatoriamente 4 argumentos.\n");
+        return 1;
+    }
+
     int largura = atoi(argv[1]);
     int altura = atoi(argv[2]);
     int max_iteracoes = atoi(argv[3]);
     int num_threads = atoi(argv[4]);
 
-    //lembrar de filtrar os argumentos inválidos aqui
+    for (int i = 0; argv[1][i] != '\0'; i++) {
+        if(!isdigit(argv[1][i])){
+            fprintf(stderr, "A largura precisa ser um número inteiro positivo.\n");
+            return 1;
+        }
+    }
+
+    for (int i = 0; argv[2][i] != '\0'; i++) {
+        if(!isdigit(argv[2][i])){
+            fprintf(stderr, "A altura precisa ser um número inteiro positivo.\n");
+            return 1;
+        }
+    }
+
+    for (int i = 0; argv[3][i] != '\0'; i++) {
+        if(!isdigit(argv[3][i])){
+            fprintf(stderr, "O número máximo de iterações precisa ser um número inteiro positivo.\n");
+            return 1;
+        }
+    }
+
+    for (int i = 0; argv[4][i] != '\0'; i++) {
+        if(!isdigit(argv[4][i])){
+            fprintf(stderr, "O número de threads precisa ser um número inteiro positivo.\n");
+            return 1;
+        }
+    }
+
+    if(altura > 8000 || largura > 8000){
+        fprintf(stderr, "Dimensões muito grandes. O máximo permitido é 8000.\n");
+        return 1;
+    }
+    if(max_iteracoes > 10000){
+        fprintf(stderr, "Número de iterações muito grande. O máximo permitido é 10000.\n");
+        return 1;
+    }
+    if(num_threads > 2000){
+        fprintf(stderr, "Número de threads muito grande. O máximo permitido é 2000.\n");
+        return 1;
+    }
 
     int ** imagem = (int **)malloc(altura * sizeof(int *));
     if (imagem == NULL) {
-        return 1;   //falha ao alocar memória
+        fprintf(stderr, "Falha ao alocar a memória.\n");
+        return 1; 
     }
     for (int y = 0; y < altura; y ++){
         imagem[y] = (int *)malloc(largura * sizeof(int));
         if (imagem[y] == NULL){
+            fprintf(stderr, "Falha ao alocar a memória.\n");
             return 1;
         }
     }
