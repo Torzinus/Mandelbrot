@@ -147,7 +147,10 @@ void salvarArquivoSerial(int ** imagem, int largura, int altura, int max_iteraco
     for (int y = 0; y < altura; y ++){
         for(int x = 0; x < largura; x++){
             int intensidade = 255 * imagem[y][x] / max_iteracoes;   //calcula a intensidade do pixel de acordo com o número de iterações
-            fprintf(arquivo, "%d ", intensidade);
+            if (x > 0) {
+                fprintf(arquivo, " ");
+            }
+            fprintf(arquivo, "%d", intensidade);
         }
         fprintf(arquivo, "\n");
     }
@@ -163,7 +166,10 @@ void salvarArquivoOpenmp(int ** imagem, int largura, int altura, int max_iteraco
     for(int y = 0; y < altura; y ++){
         for(int x = 0; x < largura; x++){
             int intensidade = 255 * imagem[y][x] / max_iteracoes;
-            fprintf(arquivo, "%d ", intensidade);
+            if(x > 0) {
+                fprintf(arquivo, " ");
+            }
+            fprintf(arquivo, "%d", intensidade);
         }
         fprintf(arquivo, "\n");
     }
@@ -179,7 +185,10 @@ void salvarArquivoPthread1(int ** imagem, int largura, int altura, int max_itera
     for(int y = 0; y < altura; y ++){
         for(int x = 0; x < largura; x++){
             int intensidade = 255 * imagem[y][x] / max_iteracoes;
-            fprintf(arquivo, "%d ", intensidade);
+            if(x > 0) {
+                fprintf(arquivo, " ");
+            }
+            fprintf(arquivo, "%d", intensidade);
         }
         fprintf(arquivo, "\n");
     }
@@ -195,7 +204,10 @@ void salvarArquivoPthread2(int ** imagem, int largura, int altura, int max_itera
     for(int y = 0; y < altura; y ++){
         for(int x = 0; x < largura; x++){
             int intensidade = 255 * imagem[y][x] / max_iteracoes;
-            fprintf(arquivo, "%d ", intensidade);
+            if(x > 0) {
+                fprintf(arquivo, " ");
+            }
+            fprintf(arquivo, "%d", intensidade);
         }
         fprintf(arquivo, "\n");
     }
