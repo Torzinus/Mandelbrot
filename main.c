@@ -4,6 +4,7 @@
 #include <omp.h>
 #include <pthread.h>
 #include <ctype.h>
+#include "times.h"
 
 #define X_MIN -2.0
 #define X_MAX 1.0
@@ -213,6 +214,7 @@ int main(int argc, char *argv[]){
     int max_iteracoes = atoi(argv[3]);
     int num_threads = atoi(argv[4]);
 
+    //tratamento de erros:
     for (int i = 0; argv[1][i] != '\0'; i++) {
         if(!isdigit(argv[1][i])){
             fprintf(stderr, "A largura precisa ser um número inteiro positivo.\n");
@@ -245,8 +247,8 @@ int main(int argc, char *argv[]){
         fprintf(stderr, "Dimensões muito grandes. O máximo permitido é 8000.\n");
         return 1;
     }
-    if(max_iteracoes > 10000){
-        fprintf(stderr, "Número de iterações muito grande. O máximo permitido é 10000.\n");
+    if(max_iteracoes > 2000){
+        fprintf(stderr, "Número de iterações muito grande. O máximo permitido é 2000.\n");
         return 1;
     }
     if(num_threads > 2000){
@@ -267,16 +269,35 @@ int main(int argc, char *argv[]){
         }
     }
 
+    FILE *f = fopen("times.txt", "w");  //limpa o arquivo de tempo pra poder gravar os novos tempos
+    if (f != NULL){
+        fclose(f);
+    }
+
+    //salvando nos arquivos:
+    struct timespec start, end; 
+    clock_gettime(CLOCK_MONOTONIC, &start); //inicia a medição de tempo
     serial(imagem, largura, altura, max_iteracoes);
+    clock_gettime(CLOCK_MONOTONIC, &end);   //finaliza a medição de tempo
+    gravarTempo("Serial", medirTempo(start, end));
     salvarArquivoSerial(imagem, largura, altura, max_iteracoes);
-    
+
+    clock_gettime(CLOCK_MONOTONIC, &start);
     openmp(imagem, largura, altura, max_iteracoes, num_threads);
+    clock_gettime(CLOCK_MONOTONIC, &end);
+    gravarTempo("OpenMP", medirTempo(start, end));
     salvarArquivoOpenmp(imagem, largura, altura, max_iteracoes);
 
+    clock_gettime(CLOCK_MONOTONIC, &start);
     pthread1(imagem, largura, altura, max_iteracoes, num_threads);
+    clock_gettime(CLOCK_MONOTONIC, &end);
+    gravarTempo("Pthreads1", medirTempo(start, end));
     salvarArquivoPthread1(imagem, largura, altura, max_iteracoes);
 
+    clock_gettime(CLOCK_MONOTONIC, &start);
     pthread2(imagem, largura, altura, max_iteracoes, num_threads);
+    clock_gettime(CLOCK_MONOTONIC, &end);
+    gravarTempo("Pthreads2", medirTempo(start, end));
     salvarArquivoPthread2(imagem, largura, altura, max_iteracoes);
 
     //liberando a memória da matriz:

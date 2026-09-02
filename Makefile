@@ -1,5 +1,5 @@
 all:
-	gcc -o mandelbrot main.c -lm -fopenmp -lpthread
+	gcc -o mandelbrot main.c times.c -lm -fopenmp -lpthread
 
 clean:
-	rm -f mandelbrot *.pgm
+	rm -f mandelbrot *.pgm times.txt
